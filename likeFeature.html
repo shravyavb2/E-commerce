@@ -1,0 +1,75 @@
+<html>
+        <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+              </head>
+    <body>
+        <center><img width="30%" height="30%" src="https://media.glassdoor.com/l/2b/47/1c/bb/digital-workplace.jpg"></center>
+        <center>
+            <button type="button" onclick="like()" class="btn btn-default btn-sm">
+
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                 Like
+              </button>
+               <span id="like"  class="badge">0</span>
+            </center> 
+              
+
+         <script>
+ 
+               var likeCount=0;
+               //var disLikeCount=0;
+              function like(){
+                  if(likeCount > 0){
+                    likeCount--;// increment operator
+                   document.getElementById('like').innerHTML=likeCount;  
+                  }
+                  else{
+                  likeCount++;// increment operator
+                   document.getElementById('like').innerHTML=likeCount;
+                  }
+              
+              }
+
+
+        </script>
+<br>
+<br>
+
+<!-- code for comment box like facebook .. not working though-->
+form id = "commentarea">
+        <input type = "text" value="your comments">
+<p id="comment">
+    
+</p>
+<input type="button" onclick="getwords()" value="Enter" /> <br>
+<p id="para"></p>
+<p id = "noofcomm">total count:</p>
+</form>
+
+
+<script type="text/javascript">
+function getwords() {
+    var element;
+    var comment = document.getElementById("comment").value;
+    comments.push(comment);
+
+    var para = document.createElement("p");
+    var node = document.createTextNode(comment);
+    para.appendChild(node);
+    para.style.backgroundColor = "wheat";
+
+    var element = document.getElementById("commentarea");
+    element.appendChild(para);
+
+    document.getElementById("noofcomm").innerHTML = comments.length;
+  //text = words.value;
+  //document.getElementById("para").innerHTML += '<p>'+text
+  console.log(comments);
+}
+</script>
+
+    </body>
+</html>
