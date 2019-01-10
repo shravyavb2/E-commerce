@@ -3,7 +3,7 @@
 //example of objects in javascript
 
 
-var shirt = {
+/*var shirt = {
  
     name : "striped tshirt",
     price: "350Rs/-",
@@ -37,4 +37,60 @@ var speaker = {
 
 
 }
-console.log(speaker.getData());
+console.log(speaker.getData()); */
+
+
+
+// 4 types of functions with combinations of params and return types
+/*function with param & return  */
+
+function add(a,b) {
+var c = a + b ;
+    return c;
+}
+//add(30,20);
+console.log("function with param & return");
+console.log(add(30,20)); 
+
+/*function with param & no return  */
+
+function addxy(x,y) {
+
+    console.log (x+y);
+
+}
+console.log("function with param & no return");
+addxy(40,20); 
+
+
+/*function with no param &  return */
+
+function addcd( ) {
+var c = 80;
+var d = 20;
+    return (c+d);
+
+}
+
+var e = addcd();
+console.log("function with no param & return");
+console.log(e); 
+
+
+/*function with no param &  no return */
+
+function addgrt( ) {
+ var m;
+ var n;
+ console.log("function with no param & no return");
+    if(m > n){
+        console.log("m is greater than n");
+    }
+
+    else{
+        console.log("n is greater than m");
+    }
+
+}
+
+addgrt(25,20); 

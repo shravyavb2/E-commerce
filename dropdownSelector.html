@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title> selector </title>
+
+</head>
+
+<body>
+
+    <select id="department">
+        <option value="movies">Prime movies</option>
+        <option value="music">Music</option>
+        <option value="books">Books</option>
+        <option value="fashion">fashion</option>
+        <option value="footwear">footwear</option>
+      </select>
+
+    <button onclick="showItems()">Go</button>
+
+    <p id="demo"></p>
+
+    <script>
+       function showItems(){
+        console.log("hello");
+        var department = document.getElementById("department").value;
+        
+        console.log(department);
+         switch (department) {
+            case  "movies":
+                    text = "padmavat";
+                    break;
+            case "music":
+                     text = "zero";
+                    break;
+            default:
+                    text = "No value found";
+         }
+
+         document.getElementById("demo").innerHTML = text;
+     }
+
+    </script>
+
+
+</body>
+
+
+
+
+</html>
