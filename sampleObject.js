@@ -94,3 +94,5 @@ function addgrt( ) {
 }
 
 addgrt(25,20); 
+
+//this is function type
